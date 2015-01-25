@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+
+  "name": "No Fb Count",
+  "description": "A chrome extension that removes notification count from Facebook",
+  "version": "1.0",
+  "permissions": [
+    "https://www.facebook.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://www.facebook.com/*"],
+      "js": ["myscript.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
