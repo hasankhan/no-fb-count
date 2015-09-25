@@ -15,7 +15,7 @@ function resetCount() {
 
 	// remove count from globe
 	if (jewelCount.className.indexOf('hidden_elem') == -1) {
-		jewelCount.className += ' hidden_elem';
+		jewelCount.innerHTML = 'ツ';
 	}
 
 	// remove count from window title
